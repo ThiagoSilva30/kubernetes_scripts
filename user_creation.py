@@ -27,7 +27,7 @@ def cert_creation():
     user_csr = "openssl req -new -key {0}.key -out {0}.csr -subj '/CN={0}'".format(user)
     os.system(user_csr)
     print('Certificados criados listados abaixo')
-    os.system('ls')
+    os.system('ls {0}*'.format(user))
 
 def object_create_csr():
     # 2 - object creation 
