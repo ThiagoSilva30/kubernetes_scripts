@@ -1,5 +1,6 @@
 #Kubernetes scripts 
 
+<<<<<<< HEAD
 # user_creation.py
 
 O script user_creation.py foi projetado para automatizar a criação de usuario no kubernetes.
@@ -13,3 +14,14 @@ Para isso, ele cria os certificados, aprova a solicitacao e seta o usuario no cl
 Exemplo:
 
 python3 user_creation.py devops cluster
+=======
+O user_creation.py permite voce criar, dentro do kubernetes, os objetos necessários para criaçao de um usuario 
+e ja seta-lo dentro de um context(cluster).
+
+Para usa-lo, execute o script user_creation.py com 2 parameotros, nome do usuario e o context onde voce deseja seta-lo.
+
+EXEMPLO:
+
+$ python3 user_creation.py devops kubernetes
+
+>>>>>>> origin/main
